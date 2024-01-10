@@ -1,0 +1,18 @@
+.close_button {
+  position: absolute;
+  right: -1.67rem;
+  width: 1.95rem;
+  height: 1.95rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2E2E2E;
+  cursor: pointer;
+  transition: .2s ease;
+  &:hover {
+    background-color: #5a5a5a;
+    transform: scale(1.05);
+  }
+}
