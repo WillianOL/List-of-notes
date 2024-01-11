@@ -8,8 +8,7 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  display: flex;
   align-items: center;
   height: 100vh;
 
