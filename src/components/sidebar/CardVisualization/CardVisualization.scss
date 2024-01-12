@@ -1,0 +1,26 @@
+.cardVisualization {
+  margin-top: 1.38rem;
+  p {
+    font-size: 0.9375rem;
+    color: #1E1E1E;
+    font-weight: 500;
+    margin-left: 0.81rem;
+  }
+
+  .cardExemple {
+    width: 250px;
+    height: 250px;
+    border-radius: 0.75rem;
+    background-color: #d4d4d4;
+    padding: 1.75rem 1.2rem;
+    h1 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid #1E1E1E;
+    }
+
+    p {
+      margin: 0;
+      margin-top: .5rem;
+    }
+  }
+}
