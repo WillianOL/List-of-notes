@@ -9,8 +9,16 @@ export const GlobalStorage = ({children}) => {
     background: "#AAA"
   })
 
+  function escreverTitulo({target}) {
+    setEstilo({...estilo, titulo: target.value || "Titulo aqui"})
+  }
+
+  function escreverConteudo({target}) {
+    setEstilo({...estilo, texto: target.value || "Texto aqui"})
+  }
+
   return (
-    <GlobalContext.Provider value={{estilo, setEstilo}}>
+    <GlobalContext.Provider value={{estilo, setEstilo, escreverTitulo, escreverConteudo}}>
       {children}
     </GlobalContext.Provider>
   )

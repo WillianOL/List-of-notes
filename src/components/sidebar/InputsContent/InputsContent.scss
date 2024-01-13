@@ -1,0 +1,23 @@
+.inputConteiner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.56rem;
+  gap: 2rem;
+  div{
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 0.9375rem;
+      color: #1E1E1E;
+    }
+    input {
+      background-color: #D9D9D93D;
+      border: 1px solid #BBBBBB;
+      border-radius: 0.31rem;
+      padding: 5px;
+    }
+    &:nth-child(2) input {
+      height: 11.6875rem;
+    }
+  }
+}
