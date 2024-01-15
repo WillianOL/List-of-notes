@@ -1,0 +1,41 @@
+.color_bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.56rem;
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem;
+    gap: 0.31rem;
+    svg {
+      width: 0.99288rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    background-color: #F7F7F7;
+    border-radius: 0.3125rem;
+    padding: 0.56rem 4.31rem;
+    border: 1px solid #AEAEAE;
+
+    li {
+      button {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #AEAEAE;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.1s linear;
+        &:hover {
+          transform: translateY(-2px) scale(1.05);
+          border-color: black;
+        }
+      }
+    }
+  }
+}
