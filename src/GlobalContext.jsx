@@ -8,6 +8,7 @@ export const GlobalStorage = ({ children }) => {
     texto: 'Texto aqui',
     background: '#AAA',
   });
+  const [cardList, setCardList] = React.useState([]);
 
   function escreverTitulo({ target }) {
     setEstilo({ ...estilo, titulo: target.value || 'Titulo aqui' });
@@ -21,6 +22,10 @@ export const GlobalStorage = ({ children }) => {
     setEstilo({...estilo, background: cor})
   }
 
+  function adicionarCard() {
+    setCardList([...cardList, estilo])
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -29,6 +34,8 @@ export const GlobalStorage = ({ children }) => {
         escreverTitulo,
         escreverConteudo,
         selecionarCor,
+        adicionarCard,
+        cardList,
       }}
     >
       {children}

@@ -1,0 +1,21 @@
+.button_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  button {
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 0.625rem;
+    width: fit-content;
+    padding: 0.44rem 2.75rem;
+    font-size: .9rem;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #444444;
+    }
+  }
+}
+

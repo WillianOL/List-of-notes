@@ -4,6 +4,7 @@ import "./Sidebar.scss"
 import CardVisualization from './CardVisualization/CardVisualization';
 import InputsContent from './InputsContent/InputsContent';
 import ColorBar from './ColorBar/ColorBar';
+import ButtonAdd from './ButtonAdd/ButtonAdd';
 
 const Sidebar = () => {
   const [close, setClose] = React.useState('')
@@ -14,6 +15,7 @@ const Sidebar = () => {
       <CardVisualization/>
       <InputsContent />
       <ColorBar />
+      <ButtonAdd />
     </section>
   )
 }

@@ -4,13 +4,9 @@ import { GlobalContext } from '../../../../GlobalContext'
 const ColorSelector = ({color}) => {
   const {selecionarCor} = React.useContext(GlobalContext)
 
-  function selecionarBotao() {
-    selecionarCor(color)
-  }
-
   return (
     <li>
-      <button style={{backgroundColor: color}} onClick={selecionarBotao}></button>
+      <button style={{backgroundColor: color}} onClick={() => selecionarCor(color)}></button>
     </li>
   )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
+import CardList from './CardList/CardList.jsx'
+import "./CardConteiner.scss"
 
 const CardConteiner = () => {
   return (
-    <section>
+    <section className='card_conteiner' >
       <h1>Card</h1>
+      <CardList />
     </section>
   )
 }
