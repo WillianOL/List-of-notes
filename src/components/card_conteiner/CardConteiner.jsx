@@ -5,7 +5,7 @@ import "./CardConteiner.scss"
 const CardConteiner = () => {
   return (
     <section className='card_conteiner' >
-      <h1>Card</h1>
+      <h1>Card wall</h1>
       <CardList />
     </section>
   )

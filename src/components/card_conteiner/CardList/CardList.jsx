@@ -4,10 +4,9 @@ import Card from './Card'
 
 const CardList = () => {
   const {cardList} = React.useContext(GlobalContext)
-
   return (
     <ul>
-      {cardList.map(card =>  <Card key={card.titulo} card={card}/>)}
+      {cardList.map(card =>  <Card key={card.id} card={card}/>)}
     </ul>
   )
 }

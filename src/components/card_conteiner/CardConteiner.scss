@@ -20,11 +20,37 @@
       height: 300px;
       border-radius: 0.75rem;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.192);
+      position: relative;
       animation: cardAparece .2s ease;
+      &:hover button {
+        display: flex;
+      }
       h2 {
         border-bottom: 1px solid black;
         color: #1E1E1E;
         margin-bottom: 10px;
+      }
+      button {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 35px;
+        width: 35px;
+        border: none;
+        color: #FF5757;
+        background-color: #2E2E2E;
+        font-size: 1.3rem;
+        border-radius: 50%;
+        transition: all .2s ease;
+        &:hover {
+          background-color: #FF5757;
+          color: #2E2E2E;
+          transform: scale(1.1);
+        }
       }
     }
   }
