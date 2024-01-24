@@ -13,11 +13,11 @@ export const GlobalStorage = ({ children }) => {
   const [cardList, setCardList] = React.useState([]);
 
   function escreverTitulo({ target }) {
-    setEstilo({ ...estilo, titulo: target.value || 'Titulo aqui'});
+    setEstilo({ ...estilo, titulo: target.value || 'Titulo aqui' });
   }
 
   function escreverConteudo({ target }) {
-    setEstilo({ ...estilo, texto: target.value || 'Texto aqui'});
+    setEstilo({ ...estilo, texto: target.value || 'Texto aqui' });
   }
 
   function selecionarCor(cor) {
@@ -26,18 +26,18 @@ export const GlobalStorage = ({ children }) => {
 
   function adicionarCard() {
     // Feito para randomizar o id do card para a key no map
-    setEstilo({...estilo, id: Math.floor(Math.random() * 1000)})
+    setEstilo({ ...estilo, id: Math.floor(Math.random() * 1000) });
     setCardList([...cardList, estilo]);
   }
 
-  function deletarCard({current}) {
-    const {id} = current.parentElement.dataset
+  function deletarCard({ current }) {
+    const { id } = current.parentElement.dataset;
     // Filtra todos os cards que não tiverem o id do card clicado
     const cardFilter = cardList.filter((item) => {
-      return item.id !== +id
-    })
+      return item.id !== +id;
+    });
     // setanto um novo estado com a lista sem o card excluido
-    setCardList([...cardFilter])
+    setCardList([...cardFilter]);
   }
 
   return (
