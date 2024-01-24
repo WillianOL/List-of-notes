@@ -10,7 +10,10 @@ const CloseButton = ({ setClose, close }) => {
   }
 
   return (
-    <button className="close_button" onClick={closeSidebar} style={{transform: close ? "rotate(180deg)" : ""}}>
+    <button className="close_button" onClick={closeSidebar} style={{
+      transform: close && "rotate(180deg)", 
+      boxShadow: close && "0px 0px 0px 100vh rgba(0, 0, 0, 0.9)"
+    }}>
       <img src={closeIcon} alt="close sidebar icon" />
     </button>
   );
