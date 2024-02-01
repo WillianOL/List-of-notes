@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export const GlobalContext = React.createContext();
 
@@ -9,8 +9,8 @@ export const GlobalStorage = ({ children }) => {
     background: '#AAA',
     id: Math.floor(Math.random() * 1000),
   });
-
-  const [cardList, setCardList] = React.useState([]);
+  // Caso tenha itens no localStorage define como estado inicial
+  const [cardList, setCardList] = React.useState(JSON.parse(localStorage.getItem('cards')) || []);
 
   function escreverTitulo({ target }) {
     setEstilo({ ...estilo, titulo: target.value || 'Titulo aqui' });
@@ -38,6 +38,8 @@ export const GlobalStorage = ({ children }) => {
     });
     // setanto um novo estado com a lista sem o card excluido
     setCardList([...cardFilter]);
+    // Atualiza o localStorage
+    localStorage.setItem("cards", JSON.stringify(cardFilter))
   }
 
   return (
