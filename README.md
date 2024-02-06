@@ -7,8 +7,9 @@
 </div>
 
 <div align='center'>
-	<img src= "https://github.com/WillianOL/List-of-notes/assets/112639055/578d2607-a282-4478-ba85-3e33d96e203a" width='850px'>
+	<img src= "https://github.com/WillianOL/List-of-notes/assets/112639055/13d1aba0-626a-466d-bcbc-8341f595ed83" width='850px'>
 </div>
+
 
 ## Ferramentas utilizadas🛠️
 
@@ -25,8 +26,8 @@
 
 <div>
 	<h2>Sobre o projeto📃</h2>
-	<p>Essa é a primeira aplciação feita com React e SASS que eu fiz inteiramente sozinho. Trata-se de uma página do spotify com adapitação para mobile.</p>
-	<p>No momento estou no começo dos estudos em React, então para treinar os conhecimentos que tenho até o momento em Hooks, componentes, events e props elaborei essa aplicação. No começo, minha maior dificuldade foi a estrutura de pastas do projeto, depois de tanto pensar acabei optando por separar cada componente em uma pasta com o componente e seu estilo (SASS).</p>
+	<p>Essa é uma das primeiras aplicações que eu fiz com React e SASS inteiramente sozinho. Fiz com intuito de treinar meus conhecimentos que tenho até agora sobre a biblioteca, tive a ideia e botei a mão na massa para elaborar essa aplicação. Se trata de uma "parede" de postites, ou uma to do list de postites/cards personalizaveis, ou seja, pode-se mudar a cor e o texto dentro do card e quando uma alteração é feita o card de exemplo da sidebar é modificado em tempo real. Tendo a opção de deletar um card desejado.</p>
+	<p>Uma dificuldade que tive ao elaborar essa aplicação foi a funcionalidade de</p>
 </div>
 
 <div>
@@ -35,9 +36,54 @@
  
 ### Deploy(vercel)✈
 
-◻<a href="https://spotify-clone-zeta-kohl.vercel.app/">Spotify clone feito com React.</a>
+◻<a href="https://spotify-clone-zeta-kohl.vercel.app/"></a>
 
 &nbsp;
 &nbsp;
 
 ## Explicação sobre o projeto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
