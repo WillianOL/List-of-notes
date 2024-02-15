@@ -16,8 +16,14 @@
       border-radius: 0.31rem;
       padding: 5px;
     }
-    &:nth-child(2) input {
-      height: 5.6875rem;
-    }
+  }
+
+  textarea {
+    background-color: #D9D9D93D;
+    resize: none;
+    padding: 5px;
+    border: 1px solid #BBBBBB;
+    border-radius: .31rem;
+    height: 5.6875rem;;
   }
 }
