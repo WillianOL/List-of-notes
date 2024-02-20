@@ -6,12 +6,12 @@ import { GlobalStorage } from './GlobalContext';
 
 function App() {
   return (
-    <GlobalStorage>
-      <main className="container">
+    <main className="container">
+      <GlobalStorage>
         <Sidebar />
         <CardConteiner />
-      </main>
-    </GlobalStorage>
+      </GlobalStorage>
+    </main>
   );
 }
 

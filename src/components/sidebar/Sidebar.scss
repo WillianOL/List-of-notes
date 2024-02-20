@@ -1,7 +1,7 @@
 .sidebar {
   display: flex;
   position: sticky;
-  width: 340px;
+  min-width: 340px;
   flex-direction: column;
   border-right: 1px solid rgba(0, 0, 0, 0.4);
   border-top: 1px solid rgba(0, 0, 0, 0.4);
@@ -23,6 +23,7 @@
   }
 
   to {
+    min-width: 10px;
     width: 50px;
     padding: 10px;
   }
